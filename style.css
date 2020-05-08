@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+:root {
+    --color-one: #111111;
+    --color-zero: #000000;
+    --color-pink: #FBDFDB;
+    --color-seven: #777777;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -20,14 +27,14 @@ header {
 }
 
 header a {
-    color: #111111;
+    color: var(--color-one);
     font-size: 16px;
     text-decoration: none;
     padding-right: 30px;
 }
 
 #intro {
-    background-color: #FBDFDB;
+    background-color: var(--color-pink);
     border-radius: 30px;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -35,20 +42,79 @@ header a {
 
 .text-intro {
     text-align: left;
-    margin: 100px 60px;
+    margin: 117px 60px;
 }
 
 .text-intro h1 {
-    color: #111111;
+    color: var(--color-one);
     font-size: 32px;
     margin-bottom: 10px;
+    max-width: 305px;
+    max-height: 38px;
 }
 
 .text-intro p {
-    color: #000000;
+    color: var(--color-zero);
     font-size: 18px;
     line-height: 28px;
     opacity: 0.7;
     max-width: 316px;
     max-height: 84px;
+}
+
+.image-intro {
+    position: relative;
+}
+
+.image-intro img {
+    width: 216px;
+    height: 300px;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    
+}
+
+.intro-cards {
+    margin: 50px 0 20px 0;
+}
+
+.intro-cards p {
+    font-size: 24px;
+    color: var(--color-zero);
+    font-weight: bold;
+}
+
+.card {
+    max-width: 300px;
+   
+   
+}
+
+.image-content img {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;     
+}
+
+.image-content img:hover {
+    cursor: pointer;
+}
+
+.info-content {
+    margin-top: 20px;
+}
+
+.info-content h1 {
+    font-weight: normal;
+    font-size: 18px;
+    color: var(--color-one);
+    margin-bottom: 5px;
+    line-height: 21px;
+}
+
+.info-content p {
+    font-size: 14px;
+    color: var(--color-seven);
+    margin-bottom: 10px;
 }
