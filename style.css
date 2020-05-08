@@ -7,6 +7,7 @@
     --color-seven: #777777;
     --color-gray: #EEEEEE;
     --color-nine: #999999;
+    --color-four: #444444;
 }
 
 * {
@@ -127,7 +128,7 @@ header a {
 .footer {
     background-color: var(--color-gray);
     text-align: center;
-    width: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
@@ -136,4 +137,43 @@ header a {
     padding: 23px;
     font-size: 14px;
     color: var(--color-nine);
+}
+
+#all-about {
+    margin: 50px 230px;
+    text-align: left;
+}
+
+.intro-about {
+    margin-bottom: 20px;
+}
+
+.intro-about p {
+    color: var(--color-one);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.about-foodfy p {
+    color: var(--color-four);
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 28px;
+}
+
+.intro-started {
+    margin-bottom: 20px;
+}
+
+.intro-started p {
+    color: var(--color-one);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.started-foodfy p {
+    color: var(--color-four);
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 28px;
 }
