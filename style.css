@@ -86,11 +86,14 @@ header a {
 }
 
 #recipe-cards {
-    margin: 0 230px 0 230px;
+    margin: 0 230px 40px 230px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 .card {
-    max-width: 300px;   
+    width: 300px;   
 }
 
 .image-content img {
