@@ -1,0 +1,58 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+<section id="intro">
+
+    <div class="text-intro">
+        <h1>As melhores receitas</h1>
+        <p>Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.</p>
+    </div>
+
+    <div class="image-intro">
+        <img src="./assets/chef.png">
+    </div>
+
+</section>
+
+<div class="intro-cards">
+    <p>Mais acessadas</p>
+</div>
+
+<section id="recipe-cards">
+
+    {% for item in items %}
+    
+    <div class="card">
+        <div class="image-content">
+            <img src="{{item.image}}" alt="Imagem de {{item.title}}">
+        </div>
+
+        <div class="info-content">
+            <h1>{{item.title}}</h1>
+            <p>por {{item.author}}</p>
+        </div>
+    </div>
+
+    {% endfor %}
+    
+</section>
+
+<div class="modal-overlay">
+    <div class="modal">
+        <div class="image-modal">
+            <iframe src="" frameborder="0" scrolling="NO"></iframe>
+        </div>
+        <div class="info-modal">
+            <h1>Asinhas de frango ao barbecue</h1>
+            <h2>por Vania Steroski</h2>
+        </div>
+        <div class="close-modal">
+            <a>Fechar modal</a>
+        </div>
+    </div>
+</div>
+
+<script src="/scripts.js"></script>
+
+{% endblock %}

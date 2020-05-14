@@ -6,7 +6,7 @@ server = express();
 
 server.use(express.static('public'));
 
-server.set("view engine", "html");
+server.set("view engine", "njk");
 
 nunjucks.configure("views", {
     express: server,
@@ -19,7 +19,7 @@ server.listen(3000, function() {
 });
 
 server.get("/", function(req, res) {
-    return res.render("home");
+    return res.render("home", {items: recipes});
 });
 
 server.get("/about", function(req, res) {
@@ -27,5 +27,5 @@ server.get("/about", function(req, res) {
 });
 
 server.get("/recipes", function(req, res) {
-    return res.render("recipes");
+    return res.render("recipes", {items: recipes});
 });
